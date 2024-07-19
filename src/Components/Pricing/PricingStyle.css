@@ -1,0 +1,202 @@
+@import '../../index.css';
+
+.section {
+    padding-top: 14.8rem;
+    padding-bottom: 14.8rem;
+    background-color: var(--accent--primary-tint);
+    margin-bottom: 56rem;
+    border-bottom: 2px solid var(--neutral--200);
+}
+
+.position-relative {
+    position: relative;
+}
+
+.half-bg-image-right {
+    z-index: -1;
+    width: 50%;
+    height: 100%;
+    background-image: url("https://d3e54v103j8qbb.cloudfront.net/img/background-image.svg");
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    left: auto;
+    right: 0%;
+    background-repeat-x: no-repeat;
+    background-repeat-y: no-repeat;
+}
+
+.half-bg-image-right.cta-primary {
+    z-index: 0;
+    width: 56%;
+    background-image: url("https://assets-global.website-files.com/62393a78af908f62ca0c82c0/624e2bca22647a7ec297f922_enjoy-documentaries-streaming-x-webflow-template%20(1).png");
+    background-position: 0%;
+}
+
+.w-layout-grid {
+    grid-row-gap: 16px;
+    grid-column-gap: 16px;
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-columns: 1fr;
+    display: grid;
+}
+
+
+
+.pricing-heading {
+    color: var(--neutral--500);
+    margin-top: 0;
+    margin-bottom: 16px;
+    font-size: 3.8rem;
+    font-weight: 700;
+    line-height: 48px;
+}
+
+.grid-2-columns {
+    grid-column-gap: 28px;
+    grid-row-gap: 28px;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-columns: 1fr;
+    align-items: center;
+    display: grid;
+}
+
+.grid-2-columns.text-left-default {
+    grid-column-gap: 120px;
+    grid-template-columns: .8fr 1fr;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.mg-bottom-40px {
+    margin-bottom: 40px;
+}
+
+.grid-1-column {
+    grid-template-rows: auto;
+    grid-template-columns: 1fr;
+    grid-auto-columns: 1fr;
+    display: grid;
+}
+
+.gap-row-16px {
+    grid-row-gap: 16px;
+}
+
+.buttons-row {
+    align-items: center;
+    display: flex;
+}
+
+.color-neutral-100 {
+    color: var(--neutral--100);
+}
+
+.icon-list-item-wrapper {
+    align-items: center;
+    display: flex;
+}
+
+
+.w-button {
+    color: #fff;
+    line-height: inherit;
+    cursor: pointer;
+    background-color: #3898ec;
+    border: 0;
+    border-radius: 0;
+    padding: 9px 15px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+a:active,
+a:hover {
+    outline: 0;
+    color: var(--neutral--500);
+}
+
+.line-rounded-icon {
+    font-family: Line Rounded Icons, sans-serif;
+}
+
+.icon-list {
+    margin-right: 16px;
+}
+
+.line-rounded-icon.icon-list {
+    font-size: 22px;
+}
+
+.text-200 {
+    line-height: 18px;
+}
+
+.text-200.list {
+    line-height: 24px;
+    color: var(--neutral--500);
+    font-weight: 600;
+}
+
+.pricing-text {
+    color: var(--neutral--500);
+    font-weight: 600;
+}
+
+
+
+
+@media screen and (max-width: 980px) {
+    .half-bg-image-right.cta-primary {
+        max-width: 52%;
+    }
+
+    .pricing-heading {
+        font-size: 3.4rem;
+        line-height: 1.5;
+    }
+
+    .pricing-text {
+        font-size: 1.4em;
+    }
+}
+
+@media screen and (max-width: 885px) {
+    .half-bg-image-right.cta-primary {
+        max-width: 46%;
+    }
+
+    .pricing-heading {
+        font-size: 2.8rem;
+        line-height: 1.2;
+    }
+
+    .pricing-text {
+        font-size: 1.2em;
+        line-height: 1.5;
+    }
+}
+
+
+@media screen and (max-width: 776px) {
+    .half-bg-image-right.cta-primary {
+        max-width: 40%;
+    }
+}
+
+/* mobile */
+@media screen and (max-width: 449px) {
+    .half-bg-image-right.cta-primary {
+        max-width: 40%;
+    }
+}
+
+@media screen and (max-width: 350px) {}
